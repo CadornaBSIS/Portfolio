@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferdinand Cadorna - Portfolio</title>
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
+
+    <!-- Link the main CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link the media queries file -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="sidebar">
+      <h1 class="logo">Cadorna <span>BSIS</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p>Hello, I am</p>
+          <h1>Ferdinand Cadorna</h1>
+          <h2>Website Developer</h2>
+          <p>
+            Mauris cursus libero eu gravida malesuada. Vivamus efficitur
+            sollicitudin tincidunt.
+          </p>
+          <button class="btn">Download Resume</button>
+        </div>
+        <div class="hero-image">
+          <img src="Profile.jpg" alt="Ferdinand Cadorna" />
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </section>
+
+      <section id="education" class="education">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>Technological University of the Philippines - Manila</h3>
+          <p><strong>Bachelor of Science in Information Systems</strong></p>
+          <p>Currently Enrolled (2022 – Present)</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Olivarez College Parañaque</h3>
+          <p>
+            <strong
+              >Senior High School: Science, Technology, Engineering, and
+              Mathematics (STEM)</strong
+            >
+          </p>
+          <p>Graduated: 2022 (2020 – 2022)</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Las Piñas National High School - Gatchalian Annex</h3>
+          <p><strong>Junior High School</strong></p>
+          <p>Graduated: 2016 (2011 – 2016)</p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-category">
+          <h3>Advanced</h3>
+          <div class="skill">
+            <p>C Language</p>
+            <div class="skill-bar">
+              <div class="progress advanced" style="width: 90%">90%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Intermediate</h3>
+          <div class="skill">
+            <p>HTML</p>
+            <div class="skill-bar">
+              <div class="progress intermediate" style="width: 80%">85%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>C++ Language</p>
+            <div class="skill-bar">
+              <div class="progress intermediate" style="width: 70%">79%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Beginner</h3>
+          <div class="skill">
+            <p>Java Language</p>
+            <div class="skill-bar">
+              <div class="progress beginner" style="width: 60%">68%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>SQL Language</p>
+            <div class="skill-bar">
+              <div class="progress beginner" style="width: 50%">57%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>CSS Language</p>
+            <div class="skill-bar">
+              <div class="progress beginner" style="width: 40%">46%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-item">
+            <img
+              src="project1.png"
+              alt="Project Image"
+              class="clickable-image"
+            />
+            <div class="project-details">
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <h3 class="project-title">Project Title</h3>
+              <p class="project-description">
+                A brief explanation of the project goes here.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/yourusername/project2"
+                  class="btn btn-github"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://yourprojectdemo.com"
+                  class="btn btn-demo"
+                  target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for more projects -->
+        </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+          <h2>My Blog</h2>
+          <div class="blog-item">
+            <div class="blog-image">
+              <img
+                src="blog.jpg"
+                alt="Blog Image"
+                class="clickable-image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Blog Title</h3>
+              <p class="publish-date">Published on: January 1, 2023</p>
+              <p class="blog-description">
+                A brief description of the blog content goes here.
+              </p>
+              <a
+                href="https://yourblogwebsite.com"
+                class="btn btn-read-more"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <p><i class="fas fa-phone-alt"></i> Phone: +1 234 567 890</p>
+      <p>
+        <i class="fas fa-envelope"></i> Email: 
+        <a href="mailto:ferdinand@email.com">ferdinand@email.com</a>
+      </p>
+      <p>
+        <i class="fab fa-github"></i> GitHub: 
+        <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+      </p>
+      <p>
+        <i class="fab fa-telegram-plane"></i> Telegram: 
+        <a href="https://t.me/yourtelegram" target="_blank">t.me/yourtelegram</a>
+      </p>
+      <p>
+        <i class="fab fa-facebook"></i> Facebook: 
+        <a href="https://facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a>
+      </p>
+    </div>
+  </section>
+  
+  
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <p>&copy; 2024 Ferdinand Cadorna. All rights reserved.</p>
+      </footer>
+    </div>
+
+
+
+
+
+        <!-- Modal -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImage" />
+          <div id="caption"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
