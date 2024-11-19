@@ -32,43 +32,39 @@ modal.addEventListener('click', (event) => {
     }
 });
 
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll("nav ul li a");
   
     // Smooth scrolling when clicking a sidebar link
     links.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent the default link behavior
-        const targetId = this.getAttribute("href").substring(1);
-        const targetSection = document.getElementById(targetId);
-  
-        // Scroll to the section smoothly
-        targetSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            // Scroll to the section smoothly
+            targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            // Highlight the section after scroll
+            setTimeout(() => {
+                highlightSection(targetSection);
+            }, 500); // Delay for smooth scroll to complete
+
+            // Add active class to the clicked link
+            links.forEach(link => link.classList.remove("active")); // Remove active class from all links
+            this.classList.add("active"); // Add active class to clicked link
         });
-  
-        // Highlight the section after scroll
-        setTimeout(() => {
-          highlightSection(targetSection);
-        }, 500); // Delay for smooth scroll to complete
-      });
     });
-  
+
     // Function to highlight a section
     function highlightSection(targetSection) {
-      sections.forEach(section => {
-        section.classList.remove("highlight");  // Remove highlight from all sections
-      });
-      targetSection.classList.add("highlight");  // Add highlight to the clicked section
+        sections.forEach(section => {
+            section.classList.remove("highlight");  // Remove highlight from all sections
+        });
+        targetSection.classList.add("highlight");  // Add highlight to the clicked section
     }
-  });
-  
-  
+});

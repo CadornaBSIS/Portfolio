@@ -27,6 +27,8 @@
     .sidebar {
         width: 100px;
     }
+    
+
 
     .main-content {
         margin-left: 100px;
@@ -120,6 +122,47 @@
         padding: 12px; /* Increase padding for better touch experience */
     }
 }
+
+
+
+/* Responsive Design for Experience Section */
+@media (max-width: 768px) {
+    .experience-item {
+      flex-direction: column;
+    }
+  
+    .experience-image {
+      padding-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .experience-content {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience h2 {
+      font-size: 1.8rem;
+    }
+  
+    .experience-title {
+      font-size: 1.5rem;
+    }
+  
+    .publish-date {
+      font-size: 0.9rem;
+    }
+  
+    .experience-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+
+
 
 
 

@@ -6,20 +6,19 @@
     <title>Ferdinand Cadorna - Portfolio</title>
 
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-  rel="stylesheet"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Link the main CSS file -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Link the media queries file -->
     <link rel="stylesheet" href="mediaqueries.css" />
-
   </head>
   <body>
     <div class="hamburger" onclick="toggleSidebar()">
@@ -29,16 +28,21 @@
     </div>
 
     <div class="sidebar">
-      <h1 class="logo">Cadorna <span>BSIS</span></h1>
+      
+      <h1 class="logo">
+        <i class="fa-brands fa-github-alt"></i>
+        Cadorna <span>BSIS</span></h1>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home"><i class="fa-solid fa-house-chimney"></i> Home Page</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+          
         </ul>
       </nav>
     </div>
@@ -61,12 +65,13 @@
       </section>
 
       <section id="about" class="about">
-        <h2>About Me</h2>
+        
+        <h2> <i class="fas fa-user"></i> About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       </section>
 
       <section id="education" class="education">
-        <h2>Education</h2>
+        <h2><i class="fas fa-graduation-cap"></i>Education</h2>
 
         <div class="education-item">
           <h3>Technological University of the Philippines - Manila</h3>
@@ -93,7 +98,7 @@
       </section>
 
       <section id="skills" class="skills">
-        <h2>Skills</h2>
+        <h2><i class="fas fa-cogs"></i>Skills</h2>
 
         <div class="skill-category">
           <h3>Advanced</h3>
@@ -145,7 +150,7 @@
       </section>
 
       <section id="projects" class="projects">
-        <h2>My Projects</h2>
+        <h2><i class="fas fa-code"></i>My Projects</h2>
         <div class="project-grid">
           <div class="project-item">
             <img
@@ -263,7 +268,6 @@
             </div>
           </div>
 
-
           <div class="project-item">
             <img
               src="project1.png"
@@ -292,7 +296,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="project-item">
             <img
@@ -325,60 +328,125 @@
 
           <!-- Repeat for more projects -->
         </div>
-        </section>
+      </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="blog">
-          <h2>My Blog</h2>
-          <div class="blog-item">
-            <div class="blog-image">
-              <img
-                src="blog.jpg"
-                alt="Blog Image"
-                class="clickable-image"
-              />
-            </div>
-            <div class="blog-content">
-              <h3 class="blog-title">Blog Title</h3>
-              <p class="publish-date">Published on: January 1, 2023</p>
-              <p class="blog-description">
-                A brief description of the blog content goes here.
-              </p>
-              <a
-                href="https://yourblogwebsite.com"
-                class="btn btn-read-more"
-                target="_blank"
-                >Read More</a
-              >
-            </div>
+      <section id="experience" class="experience">
+        <h2><i class="fas fa-briefcase"></i>Experience</h2>
+
+        <div class="experience-item">
+          <div class="experience-image">
+            <img
+              src="project1.png"
+              alt="Tech Solutions Inc."
+              class="clickable-image"
+            />
           </div>
-        </section>
+          <div class="experience-content">
+            <h3 class="experience-title">Junior Web Developer</h3>
+            <p class="publish-date">
+              Tech Solutions Inc. | June 2023 - Present
+            </p>
+            <p>
+              Worked on designing and developing responsive websites,
+              implementing dynamic features, and maintaining client-side
+              performance.
+            </p>
+          </div>
+        </div>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-box">
-      <p><i class="fas fa-phone-alt"></i> Phone: +1 234 567 890</p>
-      <p>
-        <i class="fas fa-envelope"></i> Email: 
-        <a href="mailto:ferdinand@email.com">ferdinand@email.com</a>
-      </p>
-      <p>
-        <i class="fab fa-github"></i> GitHub: 
-        <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
-      </p>
-      <p>
-        <i class="fab fa-telegram-plane"></i> Telegram: 
-        <a href="https://t.me/yourtelegram" target="_blank">t.me/yourtelegram</a>
-      </p>
-      <p>
-        <i class="fab fa-facebook"></i> Facebook: 
-        <a href="https://facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a>
-      </p>
-    </div>
-  </section>
-  
-  
+        <div class="experience-item">
+          <div class="experience-image">
+            <img
+              src="project1.png"
+              alt="Global Tech Partners"
+              class="clickable-image"
+            />
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Intern - IT Department</h3>
+            <p class="publish-date">
+              Global Tech Partners | January 2023 - May 2023
+            </p>
+            <p>
+              Assisted in database management, developed automated scripts for
+              system monitoring, and contributed to team coding projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-image">
+            <img
+              src="project1.png"
+              alt="Freelance Web Developer"
+              class="clickable-image"
+            />
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Freelance Web Developer</h3>
+            <p class="publish-date">
+              Self-Employed | March 2021 - December 2022
+            </p>
+            <p>
+              Provided clients with custom-built websites, debugging services,
+              and solutions to improve site usability and speed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog">
+        <h2><i class="fas fa-blog"></i>My Blog</h2>
+        <div class="blog-item">
+          <div class="blog-image">
+            <img src="blog.jpg" alt="Blog Image" class="clickable-image" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Blog Title</h3>
+            <p class="publish-date">Published on: January 1, 2023</p>
+            <p class="blog-description">
+              A brief description of the blog content goes here.
+            </p>
+            <a
+              href="https://dinandblog.netlify.app/"
+              class="btn btn-read-more"
+              target="_blank"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2><i class="fas fa-envelope"></i>Contact Me</h2>
+        <div class="contact-box">
+          <p><i class="fas fa-phone-alt"></i> Phone: +1 234 567 890</p>
+          <p>
+            <i class="fa-solid fa-folder-open"></i> Email:
+            <a href="mailto:ferdinand@email.com">ferdinand@email.com</a>
+          </p>
+          <p>
+            <i class="fab fa-github"></i> GitHub:
+            <a href="https://github.com/yourusername" target="_blank"
+              >github.com/yourusername</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-telegram-plane"></i> Telegram:
+            <a href="https://t.me/yourtelegram" target="_blank"
+              >t.me/yourtelegram</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-facebook"></i> Facebook:
+            <a href="https://facebook.com/yourprofile" target="_blank"
+              >facebook.com/yourprofile</a
+            >
+          </p>
+        </div>
+      </section>
 
       <!-- Footer Section -->
       <footer class="footer">
@@ -386,17 +454,11 @@
       </footer>
     </div>
 
-
-
-
-
-        <!-- Modal -->
-        <div id="imageModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="modalImage" />
-          <div id="caption"></div>
-        </div>
-      </section>
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
     </div>
 
     <!-- Link the JavaScript file -->
