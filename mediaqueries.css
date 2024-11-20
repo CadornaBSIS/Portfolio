@@ -204,29 +204,44 @@
 
 /* Mobile Responsiveness for Contact Section */
 @media (max-width: 768px) {
-    .contact-list {
+    .contact-box {
       width: 90%;
       padding: 15px;
     }
     .contact h2 {
       font-size: 1.5rem;
     }
-    .contact-list p {
-      font-size: 1rem;
+    .contact-box p {
+        font-size: 14px;
+        line-height: 1.6;
+      
     }
-  
-    /* Make contact links larger and more clickable on mobile */
-    .contact-list a {
-      font-size: 1.2rem; /* Increase font size for better touch targeting */
-      display: inline-block;
-      margin: 0.2px 0;
-      padding: 10px;
-    }
+    .contact-box a {
+        font-size: 1rem;
+       
+      }
+
+    .contact-box i {
+        margin-right: 10px; /* Space between icons and text */
+      }
   
     /* Style for contact links on hover */
-    .contact-list a:hover {
-      color: #0056b3;
+    .contact-box a:hover {
       text-decoration: none; /* Optional: remove underline on hover */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-box p {
+      font-size: 12px; /* Smaller text for very small screens */
+    }
+  
+    .contact a {
+      font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+  
+    .contact-box {
+      text-align: center; /* Center the contact details */
     }
   }
   
