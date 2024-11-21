@@ -1,4 +1,3 @@
-/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +16,6 @@
     display: flex;
   }
   
-
-
-
-
-
-
-/* Sidebar Styles */
 .sidebar {
     width: 20%;
     background: #fff;
@@ -31,24 +23,23 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -200px; /* Hidden by default */
+    left: -200px; 
     transition: left 0.3s ease;
-    z-index: 100; /* Ensure it is above other content but below the hamburger menu */
-    padding-top: 50px; /* Push content below the hamburger menu */
+    z-index: 100; 
+    padding-top: 50px; 
   }
   
   .sidebar.active {
-    left: 0 !important; /* Slide into view */
+    left: 0 !important; 
   }
 
-
- /* Style for active sidebar link */
+ 
 .sidebar nav ul li a.active {
-  background-color: #333; /* Background color for active link */
-  color: white; /* Change text color for active link */
-  font-weight: bold; /* Optional: make the active link bold */
-  padding: 10px 20px; /* Adjust padding to fit your design */
-  border-radius: 5px; /* Optional: round corners for active link */
+  background-color: #333;
+  color: white; 
+  font-weight: bold; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
 }
 
   
@@ -65,18 +56,17 @@
   }
 
   .sidebar .logo i {
-    font-size: 3.0rem; /* Adjust the size of the logo icon */
-    color: #6c63ff; /* Default color */
-    margin-right: 0.1px; /* Space between icon and text */
+    font-size: 3.0rem; 
+    color: #6c63ff; 
+    margin-right: 0.1px; 
 }
 
 .sidebar .logo i:hover {
-    color: #333; /* Change icon color on hover */
-    transform: scale(1.1); /* Slightly enlarge icon */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth effect */
+    color: #333; 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-  
   .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -102,28 +92,21 @@
     color: #fff;
   }
 
-
-
   .sidebar nav ul li a i {
-    font-size: 2.0rem; /* Adjust the size of the icons */
-    margin-right: 10px; /* Space between icon and text */
-    color: #6c63ff; /* Default color for icons */
-    transition: color 0.5s ease; /* Smooth hover effect */
+    font-size: 2.0rem; 
+    margin-right: 10px; 
+    color: #6c63ff;
+    transition: color 0.5s ease; 
 }
 
 .sidebar nav ul li a:hover i {
-    color: #fff; /* Change icon color on hover */
-    transform: scale(1.1); /* Slightly enlarge icon */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth effect */
+    color: #fff; 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-
-
-
-
-/* Normal Section Style */
 section {
-  transition: background-color 0.1s ease;  /* Smooth transition */
+  transition: background-color 0.1s ease; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -133,43 +116,33 @@ section:hover {
 }
 
 section i {
-  font-size: 2rem; /* Adjust the size of the icons */
-  color: #6c63ff; /* Default color for the icons */
-  margin-right: 10px; /* Space between icon and heading */
-  vertical-align: middle; /* Align icons with text */
+  font-size: 2rem; 
+  color: #6c63ff; 
+  margin-right: 10px; 
+  vertical-align: middle; 
 }
 
 section h1 {
-  display: inline-block; /* Place heading next to the icon */
+  display: inline-block; 
   margin: 0;
 }
 
 section {
   padding: 20px;
-  border-bottom: 1px solid #ddd; /* Optional divider between sections */
+  border-bottom: 1px solid #ddd; 
 }
 
 section i:hover {
-  color: #333; /* Change color on hover */
-  transform: scale(1.1); /* Slightly enlarge icon */
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth effect */
+  color: #333; 
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
-
-
-
-/* Highlighted Section */
 section.highlight {
-  background-color: #6b63ff1d; /* Highlight color (can be changed) */
-  color: #333;  /* Text color when highlighted */
+  background-color: #6b63ff1d; 
+  color: #333;  
 }
 
-  
-
-
-  
-  /* Hamburger Menu */
   .hamburger {
     position: fixed;
     top: 20px;
@@ -178,12 +151,11 @@ section.highlight {
     height: 30px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* Hidden by default (visible in mediaqueries) */
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
   }
-  
   .hamburger span {
     display: block;
     width: 100%;
@@ -192,14 +164,11 @@ section.highlight {
     border-radius: 2px;
   }
   
-/* When the sidebar is active, hide the hamburger icon */
 .sidebar.active .hamburger-menu {
-    display: none; /* Hide the menu icon */
+    display: none;
 }
-
-/* Optional: Move the hamburger menu off the visible area when the sidebar is open */
 .hamburger-menu {
-    z-index: 2000; /* Ensure it's above other elements */
+    z-index: 2000;
     position: fixed;
     top: 15px;
     left: 15px;
@@ -207,18 +176,8 @@ section.highlight {
 }
 
 .sidebar.active .hamburger-menu span {
-    display: none; /* Hide the lines of the hamburger menu */
+    display: none;
 }
-
-
-
-
-
-
-
-
-  
-  /* Main content */
   .main-content {
     margin-left: 20%;
     padding: 20px;
@@ -248,6 +207,7 @@ section.highlight {
     font-size: 1.2rem;
     color: #888;
     text-align: justify;
+    margin-bottom: 20px;
   }
   
   .hero-content h1 {
@@ -269,12 +229,14 @@ section.highlight {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
   }
   
   .hero-content .btn:hover {
     background-color: #5847cc;
+    text-decoration: none;
   }
   
   .hero-image img {
@@ -303,11 +265,6 @@ section.highlight {
     margin-bottom: 20px;
     text-align: justify;
   }
-  
-
-
-
-/* Education Section */
 .education {
     
     padding: 40px;
@@ -337,12 +294,7 @@ section.highlight {
     font-size: 1rem;
     color: #555;
   }
-  
 
-
-
-
-  /* Skill Section */
 .skills {
     background-color: #fff;
     padding: 40px;
@@ -371,23 +323,19 @@ section.highlight {
     margin: 10px 0;
   }
   
- /* Progress Bar Text */
 .skill-bar {
     position: relative;
     background-color: #eef1ff;
     border-radius: 5px;
     overflow: hidden;
     height: 30px;
-    z-index: 1; /* Lower than the hamburger menu */
+    z-index: 1;
   }
 
-
-
-  
   .progress {
     height: 100%;
     border-radius: 5px;
-    line-height: 30px; /* Vertically centers the text */
+    line-height: 30px;
     font-size: 0.9rem;
     color: #fff;
     text-align: center;
@@ -426,8 +374,8 @@ section.highlight {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid layout */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
 }
 
 .project-item {
@@ -441,7 +389,7 @@ section.highlight {
 .project-item img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Keeps image aspect ratio */
+    object-fit: cover; 
 }
 
 .project-details {
@@ -482,7 +430,7 @@ section.highlight {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     display: inline-block;
 }
 
@@ -543,6 +491,7 @@ section.highlight {
   height: auto;
   cursor: pointer;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
 .experience-content {
@@ -561,14 +510,6 @@ section.highlight {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-/* Blog Section Styles */
 .blog {
     background-color: #fff;
     padding: 40px;
@@ -699,10 +640,6 @@ section.highlight {
     text-decoration: underline;
   }
   
-  
-  
-  
-  /* Footer Styles */
   .footer {
     background-color: #6c63ff;
     color: #fff;
@@ -718,11 +655,6 @@ section.highlight {
     font-size: 1rem;
   }
   
-
-
-
-
-/* Modal Styles (unchanged) */
 .modal {
     display: none;
     position: fixed;
@@ -752,33 +684,27 @@ section.highlight {
     z-index: 2;
 }
 
-
-
-
-
 #imageModal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 1000;
-    overflow: auto; /* Ensure scrolling if content overflows */
+    overflow: auto; 
 }
 
-/* Modal Content (Image) */
 .modal-content {
     display: block;
     margin: 50px auto;
-    max-width: 90%; /* Responsive width */
-    max-height: 80%; /* Responsive height */
+    max-width: 90%; 
+    max-height: 80%; 
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Close Button */
 .close {
     position: absolute;
     top: 20px;
@@ -786,15 +712,13 @@ section.highlight {
     font-size: 35px;
     color: white;
     cursor: pointer;
-    z-index: 2000; /* Ensure it's above other elements */
+    z-index: 2000; 
 }
 
-/* Modal Image */
 #modalImage {
-    z-index: 1000; /* Ensures the image is below the close button */
+    z-index: 1000; 
 }
 
-/* Close Button Hover/Focus */
 .close:hover, .close:focus {
     color: #bbb;
     text-decoration: none;
