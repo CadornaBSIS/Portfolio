@@ -80,7 +80,8 @@ body {
   color: #333;
   font-size: 1.2rem;
   display: block;
-  text-align: center;
+  margin-left: 20px;
+  text-align: left;
   padding: 10px;
   border-radius: 5px;
 }
